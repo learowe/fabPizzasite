@@ -1,5 +1,117 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100px;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.desktopview {
+  display: none;
+}
+
+#mainsection {
+  min-height: 100vh;
+  margin-bottom: -75px;
+}
+
+/*Mobile layout*/
+
+/*Header*/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 75px;
+  background-color: black;
+}
+
+header .mobileview img {
+  width: 90vw;
+  height: 60px;
+}
+
+/*body*/
+.banner {
+  background-image: url("../images/img_0.jpg");
+  background-size: cover;
+  height: 85vh;
+  width: 100vw;
+}
+
+main .mobileview ul li {
+  height: 5vh;
+  width: 100vw;
+  line-height: 5vh;
+  vertical-align: middle;
+  text-align: center;
+  margin: 10px 0;
+  background-color: rgb(218, 26, 50);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+main .mobileview ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+}
+
+main .mobileview .bannertext {
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+  text-shadow: 0.1em 0.1em 0 hsl(200 50% 30%);
+}
+
+main .mobileview .bannertext h1 {
+  font-size: 3.5rem;
+  margin-bottom: 5vh;
+}
+
+main .mobileview .bannertext p {
+  text-align: center;
+  font-size: 5rem;
+  text-transform: capitalize;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 75px;
+  background-color: black;
+}
+
+#footerright {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 75px;
+}
+
+#footerright i {
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+#footerright i:hover {
+  color: rgb(218, 26, 50);
+}
+
+@media screen and (min-width: 400px) {
 }
