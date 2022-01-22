@@ -82,7 +82,7 @@ main .mobileview .bannertext h1 {
 
 main .mobileview .bannertext p {
   text-align: center;
-  font-size: 5rem;
+  font-size: 2.5rem;
   text-transform: capitalize;
 }
 
@@ -114,4 +114,181 @@ footer {
 }
 
 @media screen and (min-width: 400px) {
+  .desktopview {
+    display: block;
+  }
+
+  .mobileview {
+    display: none;
+  }
+
+  #footerleft {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 5px;
+    margin-bottom: 10px;
+
+    color: white;
+  }
+
+  #footerright {
+    width: 30vw;
+  }
+
+  header {
+    display: block;
+    width: 100vw;
+    height: 100px;
+    background-color: black;
+  }
+
+  .warning {
+    height: 25px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 75px;
+  }
+
+  #navleft img {
+    width: 200px;
+    height: 40px;
+  }
+
+  #navright img {
+    width: 130px;
+    height: 35px;
+  }
+
+  #navleft {
+    margin-left: 4rem;
+  }
+
+  #navright {
+    margin-right: 4rem;
+  }
+
+  #navmiddle {
+    display: flex;
+  }
+
+  #navmiddle li {
+    background-color: rgb(218, 26, 50);
+    margin: 0px, 2rem;
+    padding: 8px, 15px;
+    border-radius: 10px;
+    list-style-type: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+
+  #navmiddle li.hover {
+    transform: scale(1.1);
+  }
+
+  #navmiddle li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .banner-promo {
+    position: relative;
+    display: block;
+    top: 100px;
+    left: 65vw;
+    width: 375px;
+    height: 250px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .bannertext {
+    position: relative;
+    display: inline-block;
+    top: 200px;
+    left: 65vw;
+    text-align: center;
+    width: 375px;
+    color: rgb(218, 26, 50);
+  }
+
+  .bannertext h1 {
+    font-size: 2em;
+  }
+
+  .bannertext p {
+    font-size: 1.25em;
+    text-transform: capitalize;
+  }
+
+  .order {
+    position: relative;
+    width: 600px;
+    top: 250px;
+    margin: auto;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 15px;
+    padding: 1em;
+  }
+
+  .order h1 {
+    color: rgb(218, 26, 50);
+    margin-bottom: 0.5em;
+  }
+
+  .order h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .order h2,
+  p {
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .order form {
+    border: 1px solid black;
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  .order form input {
+    width: 60%;
+    border: 1px solid lightgray;
+    margin-left: 10px;
+    margin-right: 0px;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .order form input::placeholder {
+    font-weight: bold;
+    color: lightgray;
+  }
+
+  .order button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    margin: none;
+    cursor: pointer;
+  }
+
+  .order form input,
+  button {
+    padding: 1em;
+    font-weight: bold;
+  }
 }
