@@ -182,14 +182,14 @@ footer {
 
   #navmiddle li {
     background-color: rgb(218, 26, 50);
-    margin: 0px, 2rem;
-    padding: 8px, 15px;
+    margin: 0px 2rem;
+    padding: 8px 15px;
     border-radius: 10px;
     list-style-type: none;
     cursor: pointer;
+
     transition: 0.2s ease-in-out;
   }
-
   #navmiddle li.hover {
     transform: scale(1.1);
   }
